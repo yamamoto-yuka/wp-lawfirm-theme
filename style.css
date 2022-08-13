@@ -1,0 +1,42 @@
+/* 
+Theme Name: Law firm Sample
+Author: Yuka
+Description: Sample website created for a sample law firm
+Version: 1.0.0
+*/
+body{
+  padding: 0;
+  margin: 0;
+}
+
+.practiceAreas-CTA .elementor-icon-box-wrapper{
+  position: relative;
+  top: -50px;
+}
+
+.homepage-services{
+  position: relative;
+  min-height: 275px;
+  text-align: center;
+  color: black;
+}
+
+.homepage-services .content{
+  position: relative;
+  top: -50px;
+}
+
+.homepage-services .icon{
+  background-color: var(--e-global-color-primary);
+  fill: #fff;
+  font-size: 33px;
+  padding: 0.5em;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block;
+  width: 67px;
+}
+
+.practice-area-box{
+  background-color: #fff;
+}
