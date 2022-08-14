@@ -4,29 +4,38 @@ Author: Yuka
 Description: Sample website created for a sample law firm
 Version: 1.0.0
 */
-body{
+body {
   padding: 0;
   margin: 0;
 }
 
-.practiceAreas-CTA .elementor-icon-box-wrapper{
+.text-center {
+  text-align: center;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.practiceAreas-CTA .elementor-icon-box-wrapper {
   position: relative;
   top: -50px;
 }
 
-.homepage-services{
+.homepage-services {
   position: relative;
   min-height: 275px;
   text-align: center;
-  color: black;
+  color: #fff;
 }
 
-.homepage-services .content{
+.homepage-services .content {
   position: relative;
   top: -40px;
 }
 
-.homepage-services .icon{
+.homepage-services .icon {
   background-color: var(--e-global-color-primary);
   fill: #fff;
   font-size: 33px;
@@ -37,19 +46,73 @@ body{
   width: 70px;
 }
 
-.homepage-services .icon:hover{
+.homepage-services .icon:hover {
   fill: var(--e-global-color-8bad69d);
 }
 
-.homepage-services .title{
+.homepage-services .title {
   margin-bottom: 50px;
+  color: #fff;
 }
 
-.homepage-services .description{
+.homepage-services .description {
   margin: 0 20px;
 }
 
-.practice-area-box{
+.practice-area-box {
   margin: 50px 20px;
-  background-color: #fff;
+  background-color: var(--e-global-color-secondary);
+}
+
+.single-practice-areas .content {
+  padding: 50px 150px 100px 150px;
+}
+
+.single-practice-areas .fluentform,
+h1,
+h2,
+h3,
+p {
+  width: 100%;
+}
+
+.staff .image-wrapper {
+  background-color: black;
+}
+
+.staff .image-wrapper img {
+  width: 100%;
+  height: auto;
+  transform: opacity 0.4s;
+}
+
+.staff .image-wrapper a:hover > img {
+  opacity: 0.7;
+}
+
+.staff .team-member-info {
+  margin: 50px;
+}
+
+.staff .team-member-info a {
+  color: black;
+}
+
+.staff .team-member-info h3,
+.single-team h3 {
+  font-size: 1rem;
+}
+
+.single-team .elementor-widget-wrap {
+  padding: 10px;
+}
+
+.team-section {
+  column-count: 2;
+}
+
+@media only screen and(max-width:767px) {
+  .team-section {
+    column-count: 1;
+  }
 }
