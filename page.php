@@ -7,5 +7,3 @@ if(have_posts()):
     endwhile;
 endif;
 get_footer();
-?>
-

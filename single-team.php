@@ -6,15 +6,15 @@
         <div class="elementor-column elementor-col-30 elementor-top-column elementor-element" data-element_type="column">
           <div class="elementor-widget-wrap elementor-container elementor-column-gap-default contact-links">
             <?php echo the_post_thumbnail('large', array('class' => 'img-fluid')); ?>
-            <?php 
-              $email = get_field('email_address');
-              $phone = get_field('phone_number');
-              if($email != ''):
-                echo '<a href="mailto:'.$email.'" title="Email '.get_the_title().'"><i class="fas fa-envelope-square"></i></a>';
-              endif;
-              if($phone !=''):
-                echo '<a href="tel:'.$phone.'" title="Call '.get_the_title().'"><i class="fas fa-phone-square"></i></a>';
-              endif;
+            <?php
+            $email = get_field('email_address');
+            $phone = get_field('phone_number');
+            if ($email != '') :
+              echo '<a href="mailto:' . $email . '" title="Email ' . get_the_title() . '"><i class="fas fa-envelope-square"></i></a>';
+            endif;
+            if ($phone != '') :
+              echo '<a href="tel:' . $phone . '" title="Call ' . get_the_title() . '"><i class="fas fa-phone-square"></i></a>';
+            endif;
             ?>
           </div>
         </div>
@@ -25,6 +25,7 @@
             <?php echo get_the_content(); ?>
             <div class="team-member-moreinfo">
               <?php
+              // For outputting the values of custom fields created using the Advanced Custom Fields (ACF) plugin.
               $areas = get_field('areas_of_practice');
               $association = get_field('professional_association');
               $education = get_field('education');
