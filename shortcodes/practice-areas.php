@@ -45,7 +45,7 @@ function practice_areas()
   //  so $post must be restored with wp_reset_postdata().
 }
 
-// Code to generate a shortcode with the name team
+// Code to generate a shortcode with the name
 add_shortcode('practice_areas', 'practice_areas');
 
 
